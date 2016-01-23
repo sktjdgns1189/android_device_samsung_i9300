@@ -19,6 +19,11 @@
 
 -include device/samsung/smdk4412-common/BoardCommonConfig.mk
 
+# Init
+TARGET_INIT_VENDOR_LIB := libinit_sec
+TARGET_LIBINIT_DEFINES_FILE := device/samsung/i9300/init/init_m0xx.cpp
+TARGET_UNIFIED_DEVICE := true
+
 # Bionic
 MALLOC_IMPL := dlmalloc
 
@@ -51,7 +56,7 @@ BOARD_SEPOLICY_DIRS += \
     device/samsung/i9300/selinux
 
 # assert
-TARGET_OTA_ASSERT_DEVICE := m0,i9300,GT-I9300
+TARGET_OTA_ASSERT_DEVICE := m0,m0xx,m0skt,i9300,GT-I9300,m440s,SHW-M440S
 
 # inherit from the proprietary version
 -include vendor/samsung/i9300/BoardConfigVendor.mk
