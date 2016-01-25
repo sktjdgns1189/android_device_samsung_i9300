@@ -4,3 +4,4 @@ system/lib/hw/gps.exynos4.so
 system/lib/libakm.so
 system/lib/libsec-ril.so
 system/usr/keylayout/sec_touchkey.kl
+#sbin/cbd #copy by setup-makefiles.sh
